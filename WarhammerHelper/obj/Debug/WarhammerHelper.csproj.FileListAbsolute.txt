@@ -1,0 +1,10 @@
+C:\Users\sebas\source\repos\WarhammerHelper\WarhammerHelper\bin\Debug\WarhammerHelper.exe.config
+C:\Users\sebas\source\repos\WarhammerHelper\WarhammerHelper\bin\Debug\WarhammerHelper.exe
+C:\Users\sebas\source\repos\WarhammerHelper\WarhammerHelper\bin\Debug\WarhammerHelper.pdb
+C:\Users\sebas\source\repos\WarhammerHelper\WarhammerHelper\obj\Debug\WarhammerHelper.csprojAssemblyReference.cache
+C:\Users\sebas\source\repos\WarhammerHelper\WarhammerHelper\obj\Debug\WarhammerHelper.Form1.resources
+C:\Users\sebas\source\repos\WarhammerHelper\WarhammerHelper\obj\Debug\WarhammerHelper.Properties.Resources.resources
+C:\Users\sebas\source\repos\WarhammerHelper\WarhammerHelper\obj\Debug\WarhammerHelper.csproj.GenerateResource.cache
+C:\Users\sebas\source\repos\WarhammerHelper\WarhammerHelper\obj\Debug\WarhammerHelper.csproj.CoreCompileInputs.cache
+C:\Users\sebas\source\repos\WarhammerHelper\WarhammerHelper\obj\Debug\WarhammerHelper.exe
+C:\Users\sebas\source\repos\WarhammerHelper\WarhammerHelper\obj\Debug\WarhammerHelper.pdb
