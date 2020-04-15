@@ -40,10 +40,11 @@
             // 
             // Equipe2
             // 
-            this.Equipe2.Location = new System.Drawing.Point(4, 22);
+            this.Equipe2.Location = new System.Drawing.Point(4, 25);
+            this.Equipe2.Margin = new System.Windows.Forms.Padding(4);
             this.Equipe2.Name = "Equipe2";
-            this.Equipe2.Padding = new System.Windows.Forms.Padding(3);
-            this.Equipe2.Size = new System.Drawing.Size(768, 400);
+            this.Equipe2.Padding = new System.Windows.Forms.Padding(4);
+            this.Equipe2.Size = new System.Drawing.Size(1027, 495);
             this.Equipe2.TabIndex = 1;
             this.Equipe2.Text = "Equipe2";
             this.Equipe2.UseVisualStyleBackColor = true;
@@ -52,10 +53,11 @@
             // 
             this.Equipe1.Controls.Add(this.label1);
             this.Equipe1.Controls.Add(this.tableLayoutPanelUnit);
-            this.Equipe1.Location = new System.Drawing.Point(4, 22);
+            this.Equipe1.Location = new System.Drawing.Point(4, 25);
+            this.Equipe1.Margin = new System.Windows.Forms.Padding(4);
             this.Equipe1.Name = "Equipe1";
-            this.Equipe1.Padding = new System.Windows.Forms.Padding(3);
-            this.Equipe1.Size = new System.Drawing.Size(768, 400);
+            this.Equipe1.Padding = new System.Windows.Forms.Padding(4);
+            this.Equipe1.Size = new System.Drawing.Size(1027, 495);
             this.Equipe1.TabIndex = 0;
             this.Equipe1.Text = "Equipe1";
             this.Equipe1.UseVisualStyleBackColor = true;
@@ -64,9 +66,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(341, 12);
+            this.label1.Location = new System.Drawing.Point(8, 14);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 17);
+            this.label1.Size = new System.Drawing.Size(103, 20);
             this.label1.TabIndex = 1;
             this.label1.Text = "TeamName";
             // 
@@ -77,33 +80,37 @@
             this.tableLayoutPanelUnit.ColumnCount = 2;
             this.tableLayoutPanelUnit.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanelUnit.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanelUnit.Location = new System.Drawing.Point(0, 42);
+            this.tableLayoutPanelUnit.Location = new System.Drawing.Point(0, 50);
+            this.tableLayoutPanelUnit.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanelUnit.Name = "tableLayoutPanelUnit";
             this.tableLayoutPanelUnit.RowCount = 2;
             this.tableLayoutPanelUnit.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanelUnit.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanelUnit.Size = new System.Drawing.Size(768, 358);
+            this.tableLayoutPanelUnit.Size = new System.Drawing.Size(1024, 441);
             this.tableLayoutPanelUnit.TabIndex = 0;
             // 
             // ChoixEquipe
             // 
             this.ChoixEquipe.Controls.Add(this.Equipe1);
             this.ChoixEquipe.Controls.Add(this.Equipe2);
-            this.ChoixEquipe.Location = new System.Drawing.Point(12, 12);
+            this.ChoixEquipe.Location = new System.Drawing.Point(16, 15);
+            this.ChoixEquipe.Margin = new System.Windows.Forms.Padding(4);
             this.ChoixEquipe.Name = "ChoixEquipe";
             this.ChoixEquipe.SelectedIndex = 0;
-            this.ChoixEquipe.Size = new System.Drawing.Size(776, 426);
+            this.ChoixEquipe.Size = new System.Drawing.Size(1035, 524);
             this.ChoixEquipe.TabIndex = 0;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.ChoixEquipe);
-            this.MinimumSize = new System.Drawing.Size(816, 489);
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.MinimumSize = new System.Drawing.Size(1082, 591);
             this.Name = "Form1";
             this.Text = "WarhammerHelper";
+            this.Resize += new System.EventHandler(this.Form1_Resize);
             this.Equipe1.ResumeLayout(false);
             this.Equipe1.PerformLayout();
             this.ChoixEquipe.ResumeLayout(false);

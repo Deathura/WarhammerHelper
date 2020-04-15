@@ -20,20 +20,35 @@ namespace WarhammerHelper
         }
     }
 
-    public class Team
-    {
-        public String TeamName = "TeamName";
-        public Int16 nbUnit = 0;
+    /**************************************************
+     *              Personnal code
+     **************************************************/
 
-        private void AddUnit()
+    public class Army
+    {
+        string armyName;
+        short nbUnit;
+
+        public Army()
+        {
+            armyName = "name_of_the_army";
+            nbUnit = 0;
+        }
+
+        public void AddUnit()
         {
             nbUnit += 1;
         }
 
-        private void ChangeTeamName(string NewName)
+        public void SetArmyName(string NewName)
         {
-            TeamName = NewName;
+            armyName = NewName;
             //TODO Secure entry (check if its really a correct string)
+        }
+
+        public string GetArmyName()
+        {
+            return armyName;
         }
     }
 }

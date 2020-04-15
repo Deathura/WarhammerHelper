@@ -31,12 +31,13 @@ namespace WarhammerHelper
             {
                 nbRow = nbUnit / 2 + 1;
             }
-            UnitTableLayout(nbRow, 2);
+            UnitTableLayout(4, 4);
+            //UnitTableLayout(1, nbUnit);
         }
 
         private void UnitTableLayout(int nbRow, int nbColumn)
         {
-            this.tableLayoutPanelUnit.BackColor = System.Drawing.Color.Black;
+            this.tableLayoutPanelUnit.BackColor = System.Drawing.Color.AliceBlue;
             this.tableLayoutPanelUnit.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.tableLayoutPanelUnit.ColumnCount = nbColumn;
             this.tableLayoutPanelUnit.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -54,7 +55,9 @@ namespace WarhammerHelper
         {
             ChoixEquipe.Size = new Size(
                 Size.Width - ChoixEquipe.Location.X - 25,
-                Size.Height - ChoixEquipe.Location.Y - 95);
+                Size.Height - ChoixEquipe.Location.Y - 50);
+            tableLayoutPanelUnit.Size = new System.Drawing.Size(ChoixEquipe.Size.Width, ChoixEquipe.Size.Height);
+
             //groupBoxSendText.Location = new Point(groupBoxSendText.Location.X, Size.Height - 95);
             //groupBoxSendText.Size = new Size(richTextBoxTerminal.Size.Width, groupBoxSendText.Size.Height);
             //textBoxSendText.Size = new Size(
