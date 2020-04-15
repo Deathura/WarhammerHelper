@@ -1,0 +1,44 @@
+Army
+{
+    sting armyName
+    int nbUnit
+    Unit armyUnit[nbUnit]
+}
+
+Unit
+{
+    string unitName
+    string UnitPicturePath
+    int nbFigurine
+    Figurine unitFigurine[nbFigurine]
+}
+
+Figurine
+{
+    string figurineName
+    int Mouvement
+    int WS
+    int BS
+    int Force
+    Int Endurance
+    Int Attaque
+    Int commandement
+    Int Sauvegarde
+    Weapon weapons[6]
+    Skill skills[6]
+}
+
+Weapon
+{
+    string weaponName
+    string weaponType
+    int attaque
+    int penetrationArmure
+    int dommage
+}
+
+skill
+{
+    string skillName
+    string skillDetail
+}
