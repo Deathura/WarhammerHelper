@@ -1,6 +1,6 @@
 ﻿namespace WarhammerHelper
 {
-    partial class Form1
+    partial class ArmyForm
     {
         /// <summary>
         /// Variable nécessaire au concepteur.
@@ -29,12 +29,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ArmyForm));
             this.Equipe2 = new System.Windows.Forms.TabPage();
             this.Equipe1 = new System.Windows.Forms.TabPage();
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanelUnit = new System.Windows.Forms.TableLayoutPanel();
+            this.button1 = new System.Windows.Forms.Button();
             this.ChoixEquipe = new System.Windows.Forms.TabControl();
             this.Equipe1.SuspendLayout();
+            this.tableLayoutPanelUnit.SuspendLayout();
             this.ChoixEquipe.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,19 +78,31 @@
             // 
             // tableLayoutPanelUnit
             // 
-            this.tableLayoutPanelUnit.BackColor = System.Drawing.Color.Black;
+            this.tableLayoutPanelUnit.BackColor = System.Drawing.Color.White;
             this.tableLayoutPanelUnit.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.tableLayoutPanelUnit.ColumnCount = 2;
             this.tableLayoutPanelUnit.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanelUnit.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanelUnit.Controls.Add(this.button1, 0, 0);
             this.tableLayoutPanelUnit.Location = new System.Drawing.Point(0, 50);
             this.tableLayoutPanelUnit.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanelUnit.Name = "tableLayoutPanelUnit";
             this.tableLayoutPanelUnit.RowCount = 2;
             this.tableLayoutPanelUnit.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanelUnit.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanelUnit.Size = new System.Drawing.Size(1024, 441);
+            this.tableLayoutPanelUnit.Size = new System.Drawing.Size(1023, 441);
             this.tableLayoutPanelUnit.TabIndex = 0;
+            // 
+            // button1
+            // 
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1.Location = new System.Drawing.Point(4, 4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(152, 161);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // ChoixEquipe
             // 
@@ -100,7 +115,7 @@
             this.ChoixEquipe.Size = new System.Drawing.Size(1035, 524);
             this.ChoixEquipe.TabIndex = 0;
             // 
-            // Form1
+            // ArmyForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -108,11 +123,12 @@
             this.Controls.Add(this.ChoixEquipe);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimumSize = new System.Drawing.Size(1082, 591);
-            this.Name = "Form1";
+            this.Name = "ArmyForm";
             this.Text = "WarhammerHelper";
             this.Resize += new System.EventHandler(this.Form1_Resize);
             this.Equipe1.ResumeLayout(false);
             this.Equipe1.PerformLayout();
+            this.tableLayoutPanelUnit.ResumeLayout(false);
             this.ChoixEquipe.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -125,6 +141,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanelUnit;
         private System.Windows.Forms.TabControl ChoixEquipe;
+        private System.Windows.Forms.Button button1;
     }
 
     

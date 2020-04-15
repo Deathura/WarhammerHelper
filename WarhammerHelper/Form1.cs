@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WarhammerHelper
 {
-    public partial class Form1 : Form
+    public partial class ArmyForm : Form
     {
-        public Form1()
+        public ArmyForm()
         {
             InitializeComponent();
             SetVariable();
@@ -54,9 +54,11 @@ namespace WarhammerHelper
         private void Form1_Resize(object sender, EventArgs e)
         {
             ChoixEquipe.Size = new Size(
-                Size.Width - ChoixEquipe.Location.X - 25,
+                Size.Width - ChoixEquipe.Location.X - 30,
                 Size.Height - ChoixEquipe.Location.Y - 50);
             tableLayoutPanelUnit.Size = new System.Drawing.Size(ChoixEquipe.Size.Width, ChoixEquipe.Size.Height);
+
+
 
             //groupBoxSendText.Location = new Point(groupBoxSendText.Location.X, Size.Height - 95);
             //groupBoxSendText.Size = new Size(richTextBoxTerminal.Size.Width, groupBoxSendText.Size.Height);
