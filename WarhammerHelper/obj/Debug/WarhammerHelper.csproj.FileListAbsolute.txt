@@ -18,3 +18,13 @@ D:\Seb\Projets\warhammer\WarhammerHelper\WarhammerHelper\obj\Debug\WarhammerHelp
 D:\Seb\Projets\warhammer\WarhammerHelper\WarhammerHelper\obj\Debug\WarhammerHelper.csproj.CoreCompileInputs.cache
 D:\Seb\Projets\warhammer\WarhammerHelper\WarhammerHelper\obj\Debug\WarhammerHelper.exe
 D:\Seb\Projets\warhammer\WarhammerHelper\WarhammerHelper\obj\Debug\WarhammerHelper.pdb
+D:\Documents\projet\warhammer\WarhammerHelper\WarhammerHelper\bin\Debug\WarhammerHelper.exe.config
+D:\Documents\projet\warhammer\WarhammerHelper\WarhammerHelper\bin\Debug\WarhammerHelper.exe
+D:\Documents\projet\warhammer\WarhammerHelper\WarhammerHelper\bin\Debug\WarhammerHelper.pdb
+D:\Documents\projet\warhammer\WarhammerHelper\WarhammerHelper\obj\Debug\WarhammerHelper.csprojAssemblyReference.cache
+D:\Documents\projet\warhammer\WarhammerHelper\WarhammerHelper\obj\Debug\WarhammerHelper.Form1.resources
+D:\Documents\projet\warhammer\WarhammerHelper\WarhammerHelper\obj\Debug\WarhammerHelper.Properties.Resources.resources
+D:\Documents\projet\warhammer\WarhammerHelper\WarhammerHelper\obj\Debug\WarhammerHelper.csproj.GenerateResource.cache
+D:\Documents\projet\warhammer\WarhammerHelper\WarhammerHelper\obj\Debug\WarhammerHelper.csproj.CoreCompileInputs.cache
+D:\Documents\projet\warhammer\WarhammerHelper\WarhammerHelper\obj\Debug\WarhammerHelper.exe
+D:\Documents\projet\warhammer\WarhammerHelper\WarhammerHelper\obj\Debug\WarhammerHelper.pdb
