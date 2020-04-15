@@ -6,18 +6,7 @@
         /// Variable nécessaire au concepteur.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
-
-        struct Team
-        {
-            public string TeamName;
-            public int NbUnit;
-
-            public Team(string Name)
-            {
-                TeamName = Name;
-                NbUnit = 0;
-            }            
-        }
+     
 
         /// <summary>
         /// Nettoyage des ressources utilisées.
@@ -43,7 +32,7 @@
             this.Equipe2 = new System.Windows.Forms.TabPage();
             this.Equipe1 = new System.Windows.Forms.TabPage();
             this.label1 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanelUnit = new System.Windows.Forms.TableLayoutPanel();
             this.ChoixEquipe = new System.Windows.Forms.TabControl();
             this.Equipe1.SuspendLayout();
             this.ChoixEquipe.SuspendLayout();
@@ -62,7 +51,7 @@
             // Equipe1
             // 
             this.Equipe1.Controls.Add(this.label1);
-            this.Equipe1.Controls.Add(this.tableLayoutPanel1);
+            this.Equipe1.Controls.Add(this.tableLayoutPanelUnit);
             this.Equipe1.Location = new System.Drawing.Point(4, 22);
             this.Equipe1.Name = "Equipe1";
             this.Equipe1.Padding = new System.Windows.Forms.Padding(3);
@@ -81,18 +70,20 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "TeamName";
             // 
-            // tableLayoutPanel1
+            // tableLayoutPanelUnit
             // 
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 42);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(768, 358);
-            this.tableLayoutPanel1.TabIndex = 0;
+            this.tableLayoutPanelUnit.BackColor = System.Drawing.Color.Black;
+            this.tableLayoutPanelUnit.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.tableLayoutPanelUnit.ColumnCount = 2;
+            this.tableLayoutPanelUnit.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanelUnit.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanelUnit.Location = new System.Drawing.Point(0, 42);
+            this.tableLayoutPanelUnit.Name = "tableLayoutPanelUnit";
+            this.tableLayoutPanelUnit.RowCount = 2;
+            this.tableLayoutPanelUnit.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanelUnit.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanelUnit.Size = new System.Drawing.Size(768, 358);
+            this.tableLayoutPanelUnit.TabIndex = 0;
             // 
             // ChoixEquipe
             // 
@@ -124,8 +115,10 @@
         private System.Windows.Forms.TabPage Equipe2;
         private System.Windows.Forms.TabPage Equipe1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanelUnit;
         private System.Windows.Forms.TabControl ChoixEquipe;
     }
+
+    
 }
 
