@@ -4,6 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using WarhammerHelper.Class;
+
 namespace WarhammerHelper
 {
     static class Program
@@ -15,22 +17,33 @@ namespace WarhammerHelper
         static void Main()
         {
             Battle gameBattle = new Battle();
-            int test = gameBattle.battleArmy.Count();
-            MessageBox.Show(test.ToString());
-            gameBattle.AddArmy();
+            //int test = gameBattle.battleArmy.
+            //    Count();
+            //MessageBox.Show(test.ToString());
+            //gameBattle.AddArmy();
+
+            //gameBattle.battleArmy[0].SetArmyName("Ork");
 
 
-            test = gameBattle.battleArmy.Count();
-            MessageBox.Show(test.ToString());
+            //MessageBox.Show(gameBattle.battleArmy[0].GetArmyName());
 
-            MessageBox.Show(gameBattle.battleArmy[0].armyUnit[0].GetUnitName());
-            //Army inGameArmy = new Army();
-            //MessageBox.Show(inGameArmy.armyUnit[1].GetUnitName());
-            //MessageBox.Show("hello World ! here is your army name : " + inGameArmy.GetArmyName());
+            //test = gameBattle.battleArmy.Count();
+            //MessageBox.Show(test.ToString());
+
+
+            //gameBattle.AddArmy();
+            //MessageBox.Show(gameBattle.battleArmy[1].GetArmyName());
+
+            //test = gameBattle.battleArmy.Count();
+            //MessageBox.Show(test.ToString());
+
+            //gameBattle.RemoveArmy();
+            //test = gameBattle.battleArmy.Count();
+            //MessageBox.Show(test.ToString());
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ArmyForm());
+            Application.Run(new ArmyForm(gameBattle));
         }
     }
 }
