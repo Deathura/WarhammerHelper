@@ -14,42 +14,23 @@ namespace WarhammerHelper
         [STAThread]
         static void Main()
         {
-            Army[] inGameArmy = new Army[4];
+            Battle gameBattle = new Battle();
+            int test = gameBattle.battleArmy.Count();
+            MessageBox.Show(test.ToString());
+            gameBattle.AddArmy();
+
+
+            test = gameBattle.battleArmy.Count();
+            MessageBox.Show(test.ToString());
+
+            MessageBox.Show(gameBattle.battleArmy[0].armyUnit[0].GetUnitName());
+            //Army inGameArmy = new Army();
+            //MessageBox.Show(inGameArmy.armyUnit[1].GetUnitName());
+            //MessageBox.Show("hello World ! here is your army name : " + inGameArmy.GetArmyName());
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new ArmyForm());
-        }
-    }
-
-    /**************************************************
-     *              Personnal code
-     **************************************************/
-
-    public class Army
-    {
-        string armyName;
-        short nbUnit;
-
-        public Army()
-        {
-            armyName = "name_of_the_army";
-            nbUnit = 0;
-        }
-
-        public void AddUnit()
-        {
-            nbUnit += 1;
-        }
-
-        public void SetArmyName(string NewName)
-        {
-            armyName = NewName;
-            //TODO Secure entry (check if its really a correct string)
-        }
-
-        public string GetArmyName()
-        {
-            return armyName;
         }
     }
 }

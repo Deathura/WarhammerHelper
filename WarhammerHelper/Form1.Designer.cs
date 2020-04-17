@@ -30,9 +30,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ArmyForm));
-            this.Equipe2 = new System.Windows.Forms.TabPage();
             this.Equipe1 = new System.Windows.Forms.TabPage();
-            this.label1 = new System.Windows.Forms.Label();
+            this.TeamName = new System.Windows.Forms.Label();
             this.tableLayoutPanelUnit = new System.Windows.Forms.TableLayoutPanel();
             this.button1 = new System.Windows.Forms.Button();
             this.ChoixEquipe = new System.Windows.Forms.TabControl();
@@ -41,20 +40,9 @@
             this.ChoixEquipe.SuspendLayout();
             this.SuspendLayout();
             // 
-            // Equipe2
-            // 
-            this.Equipe2.Location = new System.Drawing.Point(4, 25);
-            this.Equipe2.Margin = new System.Windows.Forms.Padding(4);
-            this.Equipe2.Name = "Equipe2";
-            this.Equipe2.Padding = new System.Windows.Forms.Padding(4);
-            this.Equipe2.Size = new System.Drawing.Size(1027, 495);
-            this.Equipe2.TabIndex = 1;
-            this.Equipe2.Text = "Equipe2";
-            this.Equipe2.UseVisualStyleBackColor = true;
-            // 
             // Equipe1
             // 
-            this.Equipe1.Controls.Add(this.label1);
+            this.Equipe1.Controls.Add(this.TeamName);
             this.Equipe1.Controls.Add(this.tableLayoutPanelUnit);
             this.Equipe1.Location = new System.Drawing.Point(4, 25);
             this.Equipe1.Margin = new System.Windows.Forms.Padding(4);
@@ -65,19 +53,20 @@
             this.Equipe1.Text = "Equipe1";
             this.Equipe1.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // TeamName
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(8, 14);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(103, 20);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "TeamName";
+            this.TeamName.AutoSize = true;
+            this.TeamName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TeamName.Location = new System.Drawing.Point(8, 14);
+            this.TeamName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.TeamName.Name = "TeamName";
+            this.TeamName.Size = new System.Drawing.Size(103, 20);
+            this.TeamName.TabIndex = 1;
+            this.TeamName.Text = "TeamName";
             // 
             // tableLayoutPanelUnit
             // 
+            this.tableLayoutPanelUnit.AutoSize = true;
             this.tableLayoutPanelUnit.BackColor = System.Drawing.Color.White;
             this.tableLayoutPanelUnit.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.tableLayoutPanelUnit.ColumnCount = 2;
@@ -107,7 +96,6 @@
             // ChoixEquipe
             // 
             this.ChoixEquipe.Controls.Add(this.Equipe1);
-            this.ChoixEquipe.Controls.Add(this.Equipe2);
             this.ChoixEquipe.Location = new System.Drawing.Point(16, 15);
             this.ChoixEquipe.Margin = new System.Windows.Forms.Padding(4);
             this.ChoixEquipe.Name = "ChoixEquipe";
@@ -135,10 +123,8 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TabPage Equipe2;
         private System.Windows.Forms.TabPage Equipe1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label TeamName;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanelUnit;
         private System.Windows.Forms.TabControl ChoixEquipe;
         private System.Windows.Forms.Button button1;

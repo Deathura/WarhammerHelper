@@ -1,3 +1,10 @@
+Battle
+{
+    string battleName
+    int nbArmy
+    Army battleArmy[nbArmy]
+}
+
 Army
 {
     sting armyName
@@ -16,14 +23,14 @@ Unit
 Figurine
 {
     string figurineName
-    int Mouvement
-    int WS
-    int BS
-    int Force
-    Int Endurance
-    Int Attaque
-    Int commandement
-    Int Sauvegarde
+    int movement
+    int weaponSkill
+    int ballisticSkill
+    int strength
+    Int toughness
+    Int attacks
+    Int leadership
+    Int armourSave
     Weapon weapons[6]
     Skill skills[6]
 }

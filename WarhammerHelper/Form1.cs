@@ -51,13 +51,40 @@ namespace WarhammerHelper
             this.tableLayoutPanelUnit.TabIndex = 0;
         }
 
+        private void AddTab()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ArmyForm));
+            this.Equipe1 = new System.Windows.Forms.TabPage();
+            this.TeamName = new System.Windows.Forms.Label();
+            this.tableLayoutPanelUnit = new System.Windows.Forms.TableLayoutPanel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.ChoixEquipe = new System.Windows.Forms.TabControl();
+            this.Equipe1.SuspendLayout();
+            this.tableLayoutPanelUnit.SuspendLayout();
+            this.ChoixEquipe.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // Equipe1
+            // 
+            this.Equipe1.Controls.Add(this.TeamName);
+            this.Equipe1.Controls.Add(this.tableLayoutPanelUnit);
+            this.Equipe1.Location = new System.Drawing.Point(4, 25);
+            this.Equipe1.Margin = new System.Windows.Forms.Padding(4);
+            this.Equipe1.Name = "Equipe1";
+            this.Equipe1.Padding = new System.Windows.Forms.Padding(4);
+            this.Equipe1.Size = new System.Drawing.Size(1027, 495);
+            this.Equipe1.TabIndex = 0;
+            this.Equipe1.Text = "Equipe1";
+            this.Equipe1.UseVisualStyleBackColor = true;
+        }
+
         private void Form1_Resize(object sender, EventArgs e)
         {
             ChoixEquipe.Size = new Size(
                 Size.Width - ChoixEquipe.Location.X - 30,
                 Size.Height - ChoixEquipe.Location.Y - 50);
             tableLayoutPanelUnit.Size = new System.Drawing.Size(ChoixEquipe.Size.Width, ChoixEquipe.Size.Height);
-
+            
 
 
             //groupBoxSendText.Location = new Point(groupBoxSendText.Location.X, Size.Height - 95);
