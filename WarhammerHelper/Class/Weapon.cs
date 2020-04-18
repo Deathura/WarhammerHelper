@@ -14,6 +14,7 @@ namespace WarhammerHelper.Class
 
         // private field
         string weaponName;
+        int point;
         int range;
         string type;
         string strenght; 
@@ -27,6 +28,7 @@ namespace WarhammerHelper.Class
         public Weapon()
         {
             weaponName = "weapon_name";
+            point = 0;
             range = 0;
             type = "None";
             strenght = "None";

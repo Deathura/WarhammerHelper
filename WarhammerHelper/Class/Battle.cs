@@ -39,6 +39,14 @@ namespace WarhammerHelper.Class
         {
             return battleName;
         }
+        public int GetNbArmy()
+        {
+            return nbArmy;
+        }
+        public void SetNbArmy(int nb)
+        {
+            nbArmy = nb;
+        }
         public void AddArmy()
         {
             nbArmy += 1;

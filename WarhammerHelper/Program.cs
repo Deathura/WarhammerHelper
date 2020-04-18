@@ -17,6 +17,7 @@ namespace WarhammerHelper
         static void Main()
         {
             Battle gameBattle = new Battle();
+            //gameBattle.SetNbArmy(4);
             //int test = gameBattle.battleArmy.
             //    Count();
             //MessageBox.Show(test.ToString());
@@ -43,7 +44,8 @@ namespace WarhammerHelper
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ArmyForm(gameBattle));
+            Application.Run(new ArmyCreatorForm(gameBattle));
+            Application.Run(new GameForm(gameBattle));
         }
     }
 }
