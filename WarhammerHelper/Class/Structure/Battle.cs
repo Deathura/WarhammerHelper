@@ -13,11 +13,11 @@ namespace WarhammerHelper.Class
         *      Field
         *************************/
         // private field
-        string battleName;
-        int nbArmy;
+        public string battleName { get; set; }
+        public int nbArmy { get; set; }
 
         // public field
-        public List<Army> battleArmy = new List<Army>(); // Create a List of Army
+        public List<Army> armyList = new List<Army>(); // Create a List of Army
 
         /*************************
         *      Constructor
@@ -31,33 +31,17 @@ namespace WarhammerHelper.Class
         /*************************
          *      Method
          *************************/
-         public void SetBattleName(string newName)
-        {
-            battleName = newName;
-        }
-        public string GetBattleName()
-        {
-            return battleName;
-        }
-        public int GetNbArmy()
-        {
-            return nbArmy;
-        }
-        public void SetNbArmy(int nb)
-        {
-            nbArmy = nb;
-        }
         public void AddArmy()
         {
             nbArmy += 1;
-            battleArmy.Add(new Army());
+            armyList.Add(new Army());
             MessageBox.Show("New army created");
         }
         public void RemoveArmy()
         {
             if (nbArmy > 0)
             {
-                battleArmy.RemoveAt(nbArmy - 1);
+                armyList.RemoveAt(nbArmy - 1);
                 nbArmy -= 1;
                 MessageBox.Show("Army deleted");
             }

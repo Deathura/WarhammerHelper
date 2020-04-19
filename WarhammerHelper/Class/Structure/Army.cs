@@ -13,11 +13,11 @@ namespace WarhammerHelper.Class
         *************************/
 
         // private field
-        string armyName;
-        int nbUnit;
+        public string armyName{ get; set; }
+        public int nbUnit { get; set; }
 
         //public field
-        public List<Unit> armyUnit = new List<Unit>();
+        public List<Unit> unitList = new List<Unit>();
 
         /*************************
         *      Constructor
@@ -31,25 +31,16 @@ namespace WarhammerHelper.Class
         /*************************
          *      Method
          *************************/
-        public void SetArmyName(string NewName)
-        {
-            armyName = NewName;
-            //TODO Secure entry (check if its really a correct string)
-        }
-        public string GetArmyName()
-        {
-            return armyName;
-        }
         public void AddUnit()
         {
             nbUnit += 1;
-            armyUnit.Add(new Unit());
+            unitList.Add(new Unit());
         }
         public void RemoveUnit()
         {
             if (nbUnit > 0)
             {
-                armyUnit.RemoveAt(nbUnit);
+                unitList.RemoveAt(nbUnit);
                 nbUnit -= 1;
             }
         }

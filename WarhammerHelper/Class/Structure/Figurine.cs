@@ -13,7 +13,7 @@ namespace WarhammerHelper.Class
          *************************/
 
         // private field
-        string figurineName = "figurine_name";
+        public string figurineName { get; set; }
         int value;
         int movement;
         int weaponSkill;
@@ -31,8 +31,8 @@ namespace WarhammerHelper.Class
         public List<string> keyWord = new List<string>();
         public List<string> figurineAbility = new List<string>();
 
-        public List<Weapon> meleeWeapon = new List<Weapon>();
-        public List<Weapon> rangeWeapon = new List<Weapon>();
+        public List<Weapon> meleeWeaponList = new List<Weapon>();
+        public List<Weapon> rangeWeaponList = new List<Weapon>();
 
         /*************************
          *      Constructor
@@ -57,38 +57,29 @@ namespace WarhammerHelper.Class
         /*************************
          *      Method
          *************************/
-        public void SetFigurineName(string NewName)
-        {
-            figurineName = NewName;
-            //TODO Secure entry (check if its really a correct string)
-        }
-        public string GetFigurineName()
-        {
-            return figurineName;
-        }
         public void AddRangeWeapon()
         {
             nbRangeWeapon += 1;
-            rangeWeapon.Add(new Weapon());
+            rangeWeaponList.Add(new Weapon());
         }
         public void RemoveRangeWeapon()
         {
             if(nbRangeWeapon > 0)
             {
-                rangeWeapon.RemoveAt(nbRangeWeapon - 1);
+                rangeWeaponList.RemoveAt(nbRangeWeapon - 1);
                 nbRangeWeapon -= 1;
             }
         }
         public void AddMeleeWeapon()
         {
             nbMeleeWeapon += 1;
-            meleeWeapon.Add(new Weapon());
+            meleeWeaponList.Add(new Weapon());
         }
         public void RemoveMeleeWeapon()
         {
             if (nbMeleeWeapon > 0)
             {
-                meleeWeapon.RemoveAt(nbMeleeWeapon - 1);
+                meleeWeaponList.RemoveAt(nbMeleeWeapon - 1);
                 nbMeleeWeapon -= 1;
             }
         }

@@ -28,7 +28,7 @@ namespace WarhammerHelper
         private void comboBoxSelectNbArmy_SelectedIndexChanged(object sender, EventArgs e)
         {
             int choice = int.Parse(comboBoxSelectNbArmy.Text);
-            int difference = choice - gameBattle.GetNbArmy();
+            int difference = choice - gameBattle.nbArmy;
             for (int i = 0; i < Math.Abs(difference); i++)
             {
                 if (difference > 0)

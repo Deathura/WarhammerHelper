@@ -13,7 +13,7 @@ namespace WarhammerHelper.Class
         *************************/
 
         // private field
-        string weaponName;
+        public string weaponName { get; set; }
         int point;
         int range;
         string type;
@@ -41,14 +41,5 @@ namespace WarhammerHelper.Class
         /*************************
          *      Method
          *************************/
-        public void SetWeaponName(string NewName)
-        {
-            weaponName = NewName;
-            //TODO Secure entry (check if its really a correct string)
-        }
-        public string GetWeaponName()
-        {
-            return weaponName;
-        }
     }
 }

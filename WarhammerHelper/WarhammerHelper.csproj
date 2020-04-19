@@ -49,11 +49,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class\Army.cs" />
-    <Compile Include="Class\Battle.cs" />
-    <Compile Include="Class\Figurine.cs" />
-    <Compile Include="Class\Unit.cs" />
-    <Compile Include="Class\Weapon.cs" />
+    <Compile Include="Class\Layout\ArmyLayout.cs" />
+    <Compile Include="Class\Layout\BattleLayout.cs" />
+    <Compile Include="Class\Layout\UnitLayout.cs" />
+    <Compile Include="Class\Structure\Army.cs" />
+    <Compile Include="Class\Structure\Battle.cs" />
+    <Compile Include="Class\Structure\Figurine.cs" />
+    <Compile Include="Class\Structure\Unit.cs" />
+    <Compile Include="Class\Structure\Weapon.cs" />
     <Compile Include="ArmyCreatorForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,5 +99,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

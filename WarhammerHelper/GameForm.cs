@@ -9,40 +9,22 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 using WarhammerHelper.Class;
+using WarhammerHelper.Class.Layout;
 
 namespace WarhammerHelper
 {
     public partial class GameForm : Form
     {
         Battle gameBattle;
+        BattleLayout gameBattleLayout;
 
         public GameForm(Battle gameBattle)
         {
             this.gameBattle = gameBattle;
+            gameBattleLayout = new BattleLayout(this, gameBattle.battleName, gameBattle.nbArmy);
             InitializeComponent();
-            UpdateLayout();
         }
 
-        void UpdateLayout()
-        {
-            int nbArmyInGame = gameBattle.GetNbArmy();
-
-            if (nbArmyInGame == 2)
-            {
-                this.battleTableLayout.ColumnCount = 2;
-                this.battleTableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            }
-            if (nbArmyInGame > 2 )
-            {
-                // Add a column
-                this.battleTableLayout.ColumnCount = 2;
-                this.battleTableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-
-                // Add a Row
-                this.battleTableLayout.RowCount = 2;
-                this.battleTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            }
-        }
         private void GameForm_Load(object sender, EventArgs e)
         {
 

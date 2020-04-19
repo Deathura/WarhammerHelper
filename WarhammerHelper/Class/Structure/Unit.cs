@@ -15,12 +15,11 @@ namespace WarhammerHelper.Class
          *************************/
 
         // private field
-        string unitName = "unit_name";
-        string UnitPicturePath = "unit_picture_path";
-        int nbFigurine = 0;
+        public string unitName{ get; set; }
+        public int nbFigurine { get; set; }
 
         // public field
-        public List<Figurine> unitFigurine = new List<Figurine>();
+        public List<Figurine> figurineList = new List<Figurine>();
 
 
         /*************************
@@ -30,32 +29,22 @@ namespace WarhammerHelper.Class
         {
             unitName = "name_of_the_unit";
             nbFigurine = 0;
-            MessageBox.Show("Yo");
         }
 
         /*************************
          *      Method
          *************************/
-        public void SetUnitName(string NewName)
-        {
-            unitName = NewName;
-            //TODO Secure entry (check if its really a correct string)
-        }
-        public string GetUnitName()
-        {
-            return unitName;
-        }
         public void AddFigurine()
         {
             nbFigurine += 1;
-            unitFigurine.Add(new Figurine());
+            figurineList.Add(new Figurine());
             MessageBox.Show("New army created");
         }
         public void RemoveArmy()
         {
             if (nbFigurine > 0)
             {
-                unitFigurine.RemoveAt(nbFigurine - 1);
+                figurineList.RemoveAt(nbFigurine - 1);
                 nbFigurine -= 1;
                 MessageBox.Show("Army deleted");
             }
