@@ -22,6 +22,11 @@ namespace WarhammerHelper
         {
             this.gameBattle = gameBattle;
             gameBattleLayout = new BattleLayout(this, gameBattle.battleName, gameBattle.nbArmy);
+            //gameBattleLayout.AddArmyLayout();
+            //gameBattleLayout.AddArmyLayout();
+            //gameBattleLayout.AddArmyLayout();
+            //gameBattleLayout.AddArmyLayout();
+
             InitializeComponent();
         }
 

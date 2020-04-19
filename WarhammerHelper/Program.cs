@@ -17,30 +17,8 @@ namespace WarhammerHelper
         static void Main()
         {
             Battle gameBattle = new Battle();
-            //gameBattle.SetNbArmy(4);
-            //int test = gameBattle.battleArmy.
-            //    Count();
-            //MessageBox.Show(test.ToString());
-            //gameBattle.AddArmy();
 
-            //gameBattle.battleArmy[0].SetArmyName("Ork");
-
-
-            //MessageBox.Show(gameBattle.battleArmy[0].GetArmyName());
-
-            //test = gameBattle.battleArmy.Count();
-            //MessageBox.Show(test.ToString());
-
-
-            //gameBattle.AddArmy();
-            //MessageBox.Show(gameBattle.battleArmy[1].GetArmyName());
-
-            //test = gameBattle.battleArmy.Count();
-            //MessageBox.Show(test.ToString());
-
-            //gameBattle.RemoveArmy();
-            //test = gameBattle.battleArmy.Count();
-            //MessageBox.Show(test.ToString());
+            //gameBattle.nbArmy = 4;
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

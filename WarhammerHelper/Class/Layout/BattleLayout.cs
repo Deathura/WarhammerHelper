@@ -29,7 +29,12 @@ namespace WarhammerHelper.Class.Layout
         public BattleLayout(System.Windows.Forms.Form windowsForm, string battleName, int nbArmy)
         {
             this.battleName = battleName;
-            this.nbArmy = nbArmy;
+
+            for (int i = 0; i < nbArmy; i++)
+            {
+                AddArmyLayout();
+            }
+            //this.nbArmy = nbArmy;
             initializeTableLayout(windowsForm, nbArmy);
         }
 
@@ -80,6 +85,20 @@ namespace WarhammerHelper.Class.Layout
                 battleLayout.RowCount = 2;
                 battleLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
                 battleLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            }
+        }
+
+        public void AddArmyLayout()
+        {
+            nbArmy += 1;
+            armyLayoutList.Add(new ArmyLayout(this));
+        }
+        public void RemoveArmyLayout()
+        {
+            if (nbArmy > 0)
+            {
+                armyLayoutList.RemoveAt(nbArmy - 1);
+                nbArmy -= 1;
             }
         }
     }
