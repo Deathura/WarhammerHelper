@@ -44,6 +44,7 @@
             this.Name = "GameForm";
             this.Text = "WarhammerHelper";
             this.Load += new System.EventHandler(this.GameForm_Load);
+            this.Resize += new System.EventHandler(this.GameForm_Resize);
             this.ResumeLayout(false);
 
         }

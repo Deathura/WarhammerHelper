@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
+//using System.Windows.Forms;
 
 namespace WarhammerHelper.Class
 {
@@ -35,7 +35,7 @@ namespace WarhammerHelper.Class
         {
             nbArmy += 1;
             armyList.Add(new Army());
-            MessageBox.Show("New army created");
+            //MessageBox.Show("New army created");
         }
         public void RemoveArmy()
         {
@@ -43,7 +43,7 @@ namespace WarhammerHelper.Class
             {
                 armyList.RemoveAt(nbArmy - 1);
                 nbArmy -= 1;
-                MessageBox.Show("Army deleted");
+                //MessageBox.Show("Army deleted");
             }
         }
     }

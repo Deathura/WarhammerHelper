@@ -17,6 +17,7 @@ namespace WarhammerHelper.Class
         // private field
         public string unitName{ get; set; }
         public int nbFigurine { get; set; }
+        public string picturePath { get; set; }
 
         // public field
         public List<Figurine> figurineList = new List<Figurine>();
@@ -30,6 +31,11 @@ namespace WarhammerHelper.Class
             unitName = "name_of_the_unit";
             nbFigurine = 0;
         }
+        public Unit(string name)
+        {
+            this.unitName = name;
+            nbFigurine = 0;
+        }
 
         /*************************
          *      Method
@@ -38,7 +44,7 @@ namespace WarhammerHelper.Class
         {
             nbFigurine += 1;
             figurineList.Add(new Figurine());
-            MessageBox.Show("New army created");
+            MessageBox.Show("New fig created");
         }
         public void RemoveArmy()
         {
@@ -46,7 +52,7 @@ namespace WarhammerHelper.Class
             {
                 figurineList.RemoveAt(nbFigurine - 1);
                 nbFigurine -= 1;
-                MessageBox.Show("Army deleted");
+                MessageBox.Show("Fig deleted");
             }
         }
 

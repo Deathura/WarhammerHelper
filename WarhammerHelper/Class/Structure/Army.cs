@@ -36,6 +36,12 @@ namespace WarhammerHelper.Class
             nbUnit += 1;
             unitList.Add(new Unit());
         }
+        public void AddUnit(string name)
+        {
+            nbUnit += 1;
+            unitList.Add(new Unit(name));
+        }
+
         public void RemoveUnit()
         {
             if (nbUnit > 0)

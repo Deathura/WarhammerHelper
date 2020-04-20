@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace WarhammerHelper.Class.Layout
 {
@@ -14,25 +15,26 @@ namespace WarhammerHelper.Class.Layout
         public string armyName { get; set; }
         public int nbUnit { get; set; }
 
-        System.Windows.Forms.FlowLayoutPanel armyFlowLayout = new System.Windows.Forms.FlowLayoutPanel();
+        public FlowLayoutPanel armyFlowLayout = new FlowLayoutPanel();
 
-        List<UnitLayout> unitLayoutList = new List<UnitLayout>();
+        public List<UnitLayout> unitLayoutList = new List<UnitLayout>();
 
         /*************************
         *      Constructor
         *************************/
-        public ArmyLayout(BattleLayout battleLayout)
+        public ArmyLayout(BattleLayout battleLayout, Army army)
         {
-            armyName = "name_of_the_battle";
-            nbUnit = 0;
+            armyName = army.armyName;
+            for (int i = 0; i < army.nbUnit; i++)
+            {
+                AddUnitLayout(army.unitList[i]);
+            }
+            //for (int i = 0; i < gameBattle.nbArmy; i++)
+            //{
+            //    AddArmyLayout(gameBattle.armyList[i]);
+            //}
             InitializeArmyFlowLayout(battleLayout);
         }
-        //public ArmyLayout(BattleLayout battleLayout, string armyName, int nbUnit)
-        //{
-        //    this.armyName = armyName;
-        //    this.nbUnit = nbUnit;
-        //    InitializeArmyFlowLayout(battleLayout);
-        //}
 
         /*************************
          *      Method
@@ -40,10 +42,11 @@ namespace WarhammerHelper.Class.Layout
         public void InitializeArmyFlowLayout(BattleLayout battleLayout)
         {
 
-            armyFlowLayout.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                | System.Windows.Forms.AnchorStyles.Left)
-                | System.Windows.Forms.AnchorStyles.Right)));
-            armyFlowLayout.BackColor = System.Drawing.Color.Red;
+            armyFlowLayout.Anchor = ((AnchorStyles)((((AnchorStyles.Top | AnchorStyles.Bottom)
+                | AnchorStyles.Left)
+                | AnchorStyles.Right)));
+            armyFlowLayout.BackColor = System.Drawing.Color.White;
+            armyFlowLayout.AutoScroll = true;
             armyFlowLayout.Location = new System.Drawing.Point(4, 4);
             armyFlowLayout.Name = "armyFlowLayout";
             armyFlowLayout.Size = new System.Drawing.Size(500, 553);
@@ -52,9 +55,10 @@ namespace WarhammerHelper.Class.Layout
             battleLayout.battleLayout.Controls.Add(armyFlowLayout);
         }
 
-        //public void addUnit()
-        //{
-
-        //}
+        public void AddUnitLayout(Unit unit)
+        {
+            nbUnit += 1;
+            unitLayoutList.Add(new UnitLayout(this, unit));
+        }
     }
 }
