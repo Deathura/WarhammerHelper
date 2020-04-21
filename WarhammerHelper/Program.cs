@@ -26,7 +26,7 @@ namespace WarhammerHelper
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new ArmyCreatorForm(gameBattle));
+            //Application.Run(new ArmyCreatorForm(gameBattle));;
             Application.Run(new GameForm(gameBattle));
         }
 
@@ -50,7 +50,7 @@ namespace WarhammerHelper
             gameBattle.armyList[1].AddUnit("Ork_Boyz");
 
 
-            gameBattle.AddArmy();
+            //gameBattle.AddArmy();
 
         }
     }
